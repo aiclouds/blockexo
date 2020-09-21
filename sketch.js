@@ -6,7 +6,7 @@
 // This just picks a random word from wordnik
 // And shows it to the user each time a new tab is opened
 
-document.body.style.backgroundImage = "url('assets/favicon.png')";
+document.body.style.backgroundImage = "url('assets/wallpaper1.png')";
 
 // A random word
 var randomWordURL = "http://api.wordnik.com/v4/words.json/randomWord?" +
