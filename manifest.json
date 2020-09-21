@@ -1,15 +1,16 @@
+  
 {
-    "manifest_version": 2,
-    "name": "wallpaper.ly",
-    "icons": { "16": "/assets/favicon.png",
-      "48": "/assets/favicon.png",
-     "128": "/assets/favicon.png" },
-
-    "description": "Wallpaper.ly is a chrome extension that provides a variety of beautiful wallpapers, daily inspiration, workflow management and more.",
-    "version": "1.0",
-    "chrome_url_overrides": {
-      "newtab": "newtab.html"
-    }
-  }
-  
-  
+  "name": "blockexo",
+  "version": "1.0",
+  "description": "blockexo is a chrome extension that blocks certain disturbing sites.",
+  "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
+  "background": {
+      "scripts": ["src/js/sketch.js"]
+  },
+  "icons": {
+      "16": "assets/favicon.png",
+      "48": "assets/favicon.png",
+      "128": "assets/favicon.png"
+  },
+  "manifest_version": 2
+}
