@@ -45,14 +45,18 @@ body {
     text-shadow: 300em 200em 200em hsla(230,100%,100%,200%);
 }
 
-#phrase{
+.settings-icon {
+    height: 50px;
+    width: 50px;
     position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    color: black;
-    font-size: 60px;
-    font-family: 'Rubik';
-    font-size: 20px;
-    letter-spacing: 7px;
+    top: 2%;
+    left: 96%;
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+.settings-icon:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
