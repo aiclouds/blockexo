@@ -69,3 +69,5 @@ switch(dayOfWeekNumber){
 //Display the day of the week
 let weekdayDiv = document.getElementById('weekday');
 weekdayDiv.innerHTML = `${nameOfDay}`;
+
+var dt = new Date();

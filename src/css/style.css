@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+body {
+    background-image: url(/assets/wallpaper1.jpg);
+    background-size: cover;
+}
 
 .clock {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     color: black;
-    font-size: 60px;
-    font-family: 'Rubik';
-    font-size: 85px;
     letter-spacing: 7px;
+    display: inline-block;
+    color: white;
+    font-family: 'Righteous', serif;
+    font-size: 12em; 
+    text-shadow: 300em 200em 200em hsla(230,100%,100%,200%);
 }
 
 .container {
@@ -25,14 +33,16 @@
 
 #weekday{
     position: absolute;
-    top: 0%;
-    left: 35%;
+    top: -50%;
+    left: 40%;
     transform: translateX(-50%) translateY(-50%);
     color: black;
-    font-size: 60px;
-    font-family: 'Rubik';
-    font-size: 35px;
-    letter-spacing: 3px;
+    letter-spacing: 7px;
+    display: inline-block;
+    color: white;
+    font-family: 'Rubik', serif;
+    font-size: 5em; 
+    text-shadow: 300em 200em 200em hsla(230,100%,100%,200%);
 }
 
 #phrase{
