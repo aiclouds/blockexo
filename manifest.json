@@ -5,7 +5,7 @@
       "48": "/assets/favicon.png",
      "128": "/assets/favicon.png" },
 
-    "description": "This extensions demonstrates how to override the new tab page.",
+    "description": "Wallpaper.ly is the chrome extension that provides a variety of beautiful wallpapers, daily inspiration, and much more. ",
     "version": "1.0",
     "chrome_url_overrides": {
       "newtab": "newtab.html"
