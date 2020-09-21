@@ -37,27 +37,27 @@ let quote;
 switch(dayOfWeekNumber){
     case 0: 
         nameOfDay = 'Sunday';
-        quote = 'Time to chillax!';
+        quote = 'Be strong!';
         break;
     case 1:
         nameOfDay = 'Monday';
-        quote = 'Monday morning blues!';
+        quote = 'Be postitive!';
         break;
     case 2:
         nameOfDay = 'Tuesday';
-        quote = 'Taco Time!';
+        quote = 'Taco Tuesday!';
         break;
     case 3:
         nameOfDay = 'Wednesday';
-        quote = 'Two more days to the weekend.';
+        quote = 'Be happy!';
         break;
     case 4:
         nameOfDay = 'Thursday';
-        quote = 'The weekend is almost here...';
+        quote = 'Have fun!';
         break;
     case 5:
         nameOfDay = 'Friday';
-        quote = 'Weekend is here!';
+        quote = 'The weekend is here!';
         break;
     case 6:
         nameOfDay = 'Saturday';
@@ -69,5 +69,9 @@ switch(dayOfWeekNumber){
 //Display the day of the week
 let weekdayDiv = document.getElementById('weekday');
 weekdayDiv.innerHTML = `${nameOfDay}`;
+
+function handleSubmit() {
+  alert('Do your thing...');
+}
 
 var dt = new Date();
