@@ -6,41 +6,32 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta property="og:description" content="wallpaper.ly is the chrome extension that provides a variety of beautiful wallpapers, daily inspiration, and much more.">
+        <meta property="og:description" content="Wallpaper.ly is a chrome extension that provides a variety of beautiful wallpapers, daily inspiration, workflow management and more.">
         <meta property="og:title" content="wallpaper.ly">
         <title>wallpaper.ly</title>
         <link rel="icon" type="image/png" href="/assets/favicon.png">
         <link rel="stylesheet" href="src/css/style.css">
         <body style='overflow-x: hidden; overflow-y: hidden;'>
 
-          <style>
-            .abs-center {
-              text-align: center;
-              bottom: 0;
-              height: 200px;
-              left: 0;
-              margin: auto;
-              position: absolute;
-              top: 0;
-              right: 0;
-            }
-          </style>
-
 </head>
-        <body>
+        
+<body>
 
-          
 <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
 
-    
+<div class="container">
 
+<h1>Today is:</h1>
 
-    <div class="abs-center">
-      <h1>Word of the Tab</h1>
-      <h1 id = "word"></h1>
+    <span id="weekday">
+        Display day of the week.
+    </span></br>
+    <span id="phrase">Display a quote</span>
+</div>
+</div>
+
     </div>
-
-
+    <script src="index.php" type="text/javascript"></script>
     <script src="libraries/p5.js" type="text/javascript"></script>
     <script src="libraries/p5.dom.js" type="text/javascript"></script>
     <script src="src/js/sketch.js" type="text/javascript"></script>

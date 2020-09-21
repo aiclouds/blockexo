@@ -28,22 +28,44 @@ function showTime(){
 
 showTime();
 
-// A random word
-var randomWordURL = "http://api.wordnik.com/v4/words.json/randomWord?" +
-                    "&minLength=5&maxLength=-1" +
-                    "&api_key=48dd829661f515d5abc0d03197a00582e888cc7da2484d5c7";
+//Grab day of the week from local computer
+let date = new Date();
+let dayOfWeekNumber = date.getDay();
+let nameOfDay;
+let quote;
 
-function setup() {
-  noCanvas();
-  wordnik('word', randomWordURL);
+switch(dayOfWeekNumber){
+    case 0: 
+        nameOfDay = 'Sunday';
+        quote = 'Time to chillax!';
+        break;
+    case 1:
+        nameOfDay = 'Monday';
+        quote = 'Monday morning blues!';
+        break;
+    case 2:
+        nameOfDay = 'Tuesday';
+        quote = 'Taco Time!';
+        break;
+    case 3:
+        nameOfDay = 'Wednesday';
+        quote = 'Two more days to the weekend.';
+        break;
+    case 4:
+        nameOfDay = 'Thursday';
+        quote = 'The weekend is almost here...';
+        break;
+    case 5:
+        nameOfDay = 'Friday';
+        quote = 'Weekend is here!';
+        break;
+    case 6:
+        nameOfDay = 'Saturday';
+        quote = 'Time to party!';
+        break;
+
 }
 
-
-function wordnik(where, url) {
-  loadJSON(url, wordLoaded);
-  function wordLoaded(data) {
-    var div = createDiv(data.word);
-    div.parent(where);
-  }
-}
-
+//Display the day of the week
+let weekdayDiv = document.getElementById('weekday');
+weekdayDiv.innerHTML = `${nameOfDay}`;
