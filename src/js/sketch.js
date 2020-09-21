@@ -28,50 +28,7 @@ function showTime(){
 
 showTime();
 
-//Grab day of the week from local computer
-let date = new Date();
-let dayOfWeekNumber = date.getDay();
-let nameOfDay;
-let quote;
-
-switch(dayOfWeekNumber){
-    case 0: 
-        nameOfDay = 'Sunday';
-        quote = 'Be strong!';
-        break;
-    case 1:
-        nameOfDay = 'Monday';
-        quote = 'Be postitive!';
-        break;
-    case 2:
-        nameOfDay = 'Tuesday';
-        quote = 'Taco Tuesday!';
-        break;
-    case 3:
-        nameOfDay = 'Wednesday';
-        quote = 'Be happy!';
-        break;
-    case 4:
-        nameOfDay = 'Thursday';
-        quote = 'Have fun!';
-        break;
-    case 5:
-        nameOfDay = 'Friday';
-        quote = 'The weekend is here!';
-        break;
-    case 6:
-        nameOfDay = 'Saturday';
-        quote = 'Time to party!';
-        break;
-
-}
-
-//Display the day of the week
-let weekdayDiv = document.getElementById('weekday');
-weekdayDiv.innerHTML = `${nameOfDay}`;
-
 function handleSubmit() {
-  alert('Do your thing...');
 }
 
 var dt = new Date();
