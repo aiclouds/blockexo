@@ -1,12 +1,5 @@
-// A2Z F17
-// Daniel Shiffman
-// http://shiffman.net/a2z
-// https://github.com/shiffman/A2Z-F17
-
-// This just picks a random word from wordnik
-// And shows it to the user each time a new tab is opened
-
-document.body.style.backgroundImage = "url('assets/wallpaper1.png')";
+var d = new Date();
+document.getElementById("demo").innerHTML = d;
 
 // A random word
 var randomWordURL = "http://api.wordnik.com/v4/words.json/randomWord?" +
