@@ -1,7 +1,7 @@
   
 const defaultFilters = [
 	"*://*.roblox.com/NewLogin*",
-	"*://*porn*",
+	"*://*instagram.com/*",
 	"*://creative.ak.fbcdn.net/*",
 	"*://*.adbrite.com/*",
 	"*://*.exponential.com/*",
